@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>  
+        *{
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: rgb(181, 113, 241);
+        }
+        .wrapper{
+            width: 420px;
+            background: rgb(71, 12, 127);
+            color: white;
+            border-radius: 10px;
+            padding: 30px 40px;
+        
+        
+        }
+        .wrapper h1{
+            font-size: 36px;
+            text-align: center;
+        }
+        .wrapper .input-box{
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+        .input-box input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            outline: none;
+            border: 2px solid white;
+            border-radius: 40px;
+            font-size: 16px;
+            color: white;
+            padding: 20px 45px 20px 20px;
+        }
+        .input-box input::placeholder{
+            color: white;
+        }
+        .input-box i{
+            position: absolute;
+            right: 20px;
+            top: 35%;
+            transform: translateY(-50%);
+            font-size: 20px;
+
+        }
+        .wrapper .remember-forgot{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -15px 0 15px;
+        }
+        .remember-forgot label input{
+            accent-color: white;
+            margin-right: 3px;
+        }
+        .remember-forgot a{
+            color: white;
+            text-decoration: none;
+        }
+        .remember-forgot a:hover{
+            text-decoration: underline;
+        }
+        .wrapper .btn{
+            width: 100%;
+            height: 45px;
+            background: rgb(181, 113, 241);
+            border: 2px solid white;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: white;
+            font-weight: 600;
+            transition: .5s all;
+        }
+        .wrapper .btn:hover{
+            transition: .5s all;
+            background: white;
+            color: rgb(8, 91, 81);
+            border: 2px solid rgb(20, 149, 134);
+        }
+        .wrapper .register-link{
+            font-size: 14.5px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+        .register-link p a{
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .register-link p a:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="email" placeholder="Email" required>
+                <i class='bx bxs-envelope bx-tada' ></i>
+            </div>
+            
+            <div class="input-box">
+                <input type="text"  placeholder="Password"  required  >
+                <i class='bx bxs-lock-alt bx-tada' ></i>
+            </div>
+            
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password</a>
+            </div>
+            
+            <button type="submit" class="btn">Login</button>
+            
+            <div class="register-link">
+                <p>Don't have an account 
+                    <a href="singup.html">Register</a>
+                </p>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
